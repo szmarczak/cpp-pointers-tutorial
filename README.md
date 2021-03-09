@@ -19,6 +19,11 @@ tab + 1 = 0074036C
 
 There are three (3) one-dimensional tables. The second one owns the columns of the first row, the third one owns the columns of the second row. The first table is a table of pointers. The first element is a pointer to the first row, the latter is a pointer to the second row.
 
+### Hey, what does `*`, `&`, `*&` and `**` do?
+
+- [What are the differences between a pointer variable and a reference variable in C++?](https://stackoverflow.com/questions/57483/what-are-the-differences-between-a-pointer-variable-and-a-reference-variable-in)
+- [Meaning of *& and **& in C++](https://stackoverflow.com/questions/5789806/meaning-of-and-in-c)
+- https://en.cppreference.com/w/cpp/language/pointer
 
 ```cpp
 #include <iostream>
