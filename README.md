@@ -15,6 +15,10 @@ tab + 1 = 0074036C
 &tab[1][1] = 0074083C
 ```
 
+### Here's an explaination what's going on
+
+There are three (3) one-dimensional tables. The second one owns the columns of the first row, the third one owns the columns of the second row. The first table is a table of pointers. The first element is a pointer to the first row, the latter is a pointer to the second row.
+
 
 ```cpp
 #include <iostream>
