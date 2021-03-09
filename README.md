@@ -3,15 +3,16 @@
 
 ```
              tab + 0   tab + 1
-   Address  00E5F810  00E5F814  00E5F2D0  00E5F2D4  00E5F768  00E5F76C
-     Value  00E5F2D0  00E5F768         1         2         3         4
+   Address  00740368  0074036C  00740800  00740804  00740838  0074083C
+     Value  00740800  00740838         1         2         3         4
                  [0]       [1]    [0][0]    [0][1]    [1][0]    [1][1]
 
-tab = 00E5F810
-tab + 1 = 00E5F814
-*(tab + 1) = tab[1] = 00E5F768
+tab = 00740368
+tab + 1 = 0074036C
+*(tab + 1) = tab[1] = 00740838
+*(tab + 1) + 1 = 0074083C
 *(*(tab + 1) + 1) = tab[1][1] = 4
-&tab[1][1] = 00E5F76C
+&tab[1][1] = 0074083C
 ```
 
 
@@ -146,6 +147,7 @@ void printValue(T **table, size_t row, size_t column) {
     std::cout << "tab = " << table << std::endl;
     std::cout << "tab + " << row << " = " << (table + row) << std::endl;
     std::cout << "*(tab + " << row << ") = tab[" << row << "] = " << *(table + row) << std::endl;
+    std::cout << "*(tab + " << row << ") + " << column << " = " << *(table + row) + column << std::endl;
     std::cout << "*(*(tab + " << row << ") + " << column << ") = tab[" << row << "][" << column << "] = " << *(*(table + row) + column) << std::endl;
     std::cout << "&tab[" << row << "][" << column << "] = " << &table[row][column] << std::endl;
 
