@@ -25,6 +25,7 @@ There are three (3) one-dimensional tables. The second one owns the columns of t
 - [Meaning of *& and **& in C++](https://stackoverflow.com/questions/5789806/meaning-of-and-in-c)
 - https://en.cppreference.com/w/cpp/language/pointer
 - https://en.cppreference.com/w/cpp/language/reference
+- https://cdecl.org/
 
 ```cpp
 #include <iostream>
