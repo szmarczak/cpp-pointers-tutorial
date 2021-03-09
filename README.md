@@ -1,5 +1,5 @@
 # cpp-pointers-tutorial
-> A simple tutorial on how the pointers work
+> A simple tutorial on how the pointers work - a two-dimensional array example
 
 ```
              tab + 0   tab + 1
