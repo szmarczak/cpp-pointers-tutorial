@@ -11,6 +11,7 @@ tab = 00E5F810
 tab + 1 = 00E5F814
 *(tab + 1) = tab[1] = 00E5F768
 *(*(tab + 1) + 1) = tab[1][1] = 4
+&tab[1][1] = 00E5F76C
 ```
 
 
@@ -146,6 +147,7 @@ void printValue(T **table, size_t row, size_t column) {
     std::cout << "tab + " << row << " = " << (table + row) << std::endl;
     std::cout << "*(tab + " << row << ") = tab[" << row << "] = " << *(table + row) << std::endl;
     std::cout << "*(*(tab + " << row << ") + " << column << ") = tab[" << row << "][" << column << "] = " << *(*(table + row) + column) << std::endl;
+    std::cout << "&tab[" << row << "][" << column << "] = " << &table[row][column] << std::endl;
 
     std::cout << std::endl;
 }
