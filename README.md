@@ -48,7 +48,7 @@ int main() {
     // Create new dynamic array
     int **table = new int*[rows];
 
-    for (int i = 0; i < 2; i++) {
+    for (int i = 0; i < rows; i++) {
         table[i] = new int[columns];
     }
 
